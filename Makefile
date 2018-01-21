@@ -4,3 +4,5 @@ all:
 	make -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
 clean:
 	make -C /lib/modules/$(KVERSION)/b
+userspace:
+	gcc -o userspace userspace.c
